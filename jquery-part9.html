@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>jQuery Mobile Page Transitions Example</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+    <div data-role="page" id="page1">
+
+        <div data-role="header" data-theme="b">
+            <h1>HOME PAGE</h1>
+        </div>
+
+        <div data-role="content">
+            <h3>Transition Demos</h3>
+
+            <ul data-role="listview" data-inset="true">
+                
+                <ul data-role="listview">
+                    <li data-icone="video"><a href="#page2" data-transition=
+                    "turn"> Videos</a></li>
+                
+                <li>
+                    <a href="#page3" data-transition="slidedown" data-icon="audio">
+                        Audios
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#page2" data-transition="flow" data-icon="gear">
+                        Pictures
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h4>Footer</h4>
+        </div>
+    </div> 
+
+    <div data-role="page" id="page2">
+
+        <div data-role="header">
+            <h1>Videos </h1>
+        </div>
+
+        <div data-role="content">
+            <h1>WELCOME TO VIDEO CANTRE<h1>
+            <a href="#page1" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left" data-transition="pop">
+                Go Back (Pop)
+            </a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Footer</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="page3">
+
+        <div data-role="header">
+            <h1>Audios</h1>
+        </div>
+
+        <div data-role="content">
+            <h1>Welcome to the Audios section!</h1>
+            <a href="#page1" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">
+                Back to Home (Default Fade)
+            </a>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Footer</h4>
+        </div>
+    </div>
+
+</body>
+</html>

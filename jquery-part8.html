@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>jQuery Mobile Panel Example</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+    <div data-role="page" id="page1">
+
+        <div data-role="panel" 
+             id="menu_panel" 
+             data-display="overlay"
+             data-position="right"
+             data-theme="b">
+            
+            <div data-role="header">
+                <h2>Settings</h2>
+            </div>
+            
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page1" data-icon="home">Home</a></li>
+                <li><a href="#page2" data-icon="video">Videos</a></li>
+                <li><a href="#page3" data-icon="audio">Audios</a></li>
+                <li><a href="#page1" data-rel="close" data-icon="delete">Close Menu</a></li>
+            </ul>
+
+        </div> <div data-role="header" data-theme="b">
+            <h1>Home Page 🏠</h1>
+            
+            <a href="#menu_panel" 
+               class="ui-btn ui-btn-right ui-icon-bars ui-btn-icon-notext">
+                Menu
+            </a>
+        </div>
+
+        <div data-role="content">
+            <h3>Panel Demonstration</h3>
+            <p>Click the *Menu icon* in the top right corner to view the panel.</p>
+        </div>
+
+        <div data-role="footer" data-position="fixed" data-theme="b">
+            <h4>Footer</h4>
+        </div>
+    </div> 
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Videos Panel 🎬</h1>
+        </div>
+        <div data-role="content">
+            <a href="#page1" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left" data-transition="pop">
+                Go Back
+            </a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Footer</h4>
+        </div>
+    </div>
+
+    <div data-role="page" id="page3">
+        <div data-role="header">
+            <h1>Audios Panel 🎧</h1>
+        </div>
+        <div data-role="content">
+            <a href="#page1" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-left">
+                Back to Home
+            </a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h4>Footer</h4>
+        </div>
+    </div>
+
+</body>
+</html>

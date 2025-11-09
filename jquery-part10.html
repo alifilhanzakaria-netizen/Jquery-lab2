@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Politeknik Seberang Perai</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <style>
+        /* CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        .header-bar {
+            background-color: #007bff; /*  */
+            color: white;
+            padding: 10px 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #333; /* Warna gelap untuk navbar */
+        }
+
+        .nav-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 0;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #555; /* Warna hover default */
+        }
+
+        .nav-button span {
+            display: block;
+            font-size: 24px; /* Icon Placeholder */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            max-width: 100%;
+            height: auto;
+            /* Logo 
+        }
+
+        .contact-info {
+            text-align: left;
+            margin: 20px 0;
+            display: inline-block; /* Div konten */
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .social-media {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-button {
+            background-color: #eee;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .social-button:hover {
+            background-color: #ddd;
+        }
+
+        .icon {
+            margin-right: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-bar">
+        Q4: Contact Us with jQuery
+    </div>
+
+    <nav class="navbar">
+        <button class="nav-button" id="about-us">
+            <span class="icon"></span><br>
+            About Us
+        </button>
+        <button class="nav-button" id="our-services">
+            <span class="icon"></span><br>
+            Our Services
+        </button>
+        <button class="nav-button" id="registration-form">
+            <span class="icon"></span><br>
+            Registration Form
+        </button>
+        <button class="nav-button" id="contact-us">
+            <span class="icon"></span><br>
+            Contact Us
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="images.png" alt="Politeknik Seberang Perai Logo" id="psp-logo">
+        </div>
+
+    
+
+        <div class="contact-info">
+            <p><span class="icon">💬</span> *WhatsApp:* <a href="https://wa.me/60195702043" target="_blank">Send a WhatsApp message</a></p>
+            <p><span class="icon">📞</span> *Call:* [0195702043]</p>
+            <p><span class="icon">📧</span> *Email:* [alifilhanbinzakaria@gmail.com]</p>
+            <p><span class="icon">📍</span> *Address:* Politeknik Seberang Perai, 
+                                            <p>Jalan Permatang Pauh, 13500 Permatang Pauh,</p>
+                                            Pulau Pinang, Malaysia</p>
+        </div>
+
+        <div class="social-media">
+            <a href="#" class="social-button"><span class="icon">〰️</span> Add Us on Facebook</a>
+            <a href="#" class="social-button"><span class="icon">〰️</span> Add Us on Twitter</a>
+            <a href="#" class="social-button"><span class="icon">〰️</span> Add Us on Instagram</a>
+        </div>
+    </div>
+    
+    <script>
+        // jQuery .
+        $(document).ready(function(){
+            
+            // 1. Animate the logo '
+            $("#psp-logo").hide().fadeIn(2000); // 2000ms = 2
+
+            // 2. Apply hover effects '.
+            $(".nav-button").hover(function(){
+                // Fungsi (hover in)
+                $(this).css("background-color", "#2196f3"); // Warna biru
+            }, function(){
+                // Fungsi (hover out)
+                $(this).css("background-color", "#333"); // awal navbar
+            });
+
+            // Catatan
+            $(".social-button").hover(function(){
+                $(this).css("transform", "scale(1.05)");
+                $(this).css("box-shadow", "0 0 5px rgba(0,0,0,0.2)");
+            }, function(){
+                $(this).css("transform", "scale(1)");
+                $(this).css("box-shadow", "none");
+            });
+           
+
+        });
+    </script>
+
+</body>
+</html>
